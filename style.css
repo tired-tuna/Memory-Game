@@ -1,0 +1,155 @@
+body {
+    background-color: rgba(216, 249, 223, 0.456);
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: "Playwrite MX", cursive;
+}
+
+#startButton {
+    display: none;
+    height: 50px;
+    width: 50px;
+    border-color: transparent;
+    background-color: transparent;
+    line-height: 110px;
+    font-family: "Playwrite MX";
+    font-size: 15px;
+    position: relative;
+    transform: translate(-50px, 50px);
+}
+
+.fa-solid.fa-play:hover {
+    color: black;
+    text-shadow: -1px 0 rgb(155, 155, 155), 0 1px rgb(155, 155, 155),
+        1px 0 rgb(155, 155, 155), 0 -1px rgb(155, 155, 155);
+    
+}
+
+
+
+.fa-solid.fa-play {
+    position: absolute;
+    justify-self: center;
+    color: rgba(0, 0, 0, 0.379);
+    font-size: 60px;
+}
+
+#restartButton {
+    background-color: transparent;
+    border-color: transparent;
+    position:relative;
+    height: 50px;
+    width: 50px;
+    transform: translate(100px, 50px);
+}
+
+.fa-rotate-right {
+    position: absolute;
+    justify-self: center;
+    font-size: 50px;
+    color: lavender;
+    text-shadow: -1px 0 rgb(155, 155, 155), 0 1px rgb(155, 155, 155),
+        1px 0 rgb(155, 155, 155), 0 -1px rgb(155, 155, 155);
+}
+
+.fa-rotate-right:hover {
+    color: plum;
+    text-shadow: -1px 0 rgb(106, 0, 168), 0 1px rgb(106, 0, 168),
+        1px 0 rgb(106, 0, 168), 0 -1px rgb(106, 0, 168);
+}
+
+.reset {
+    position: absolute;
+    justify-self: center;
+    font-size: 50px; 
+}
+
+.resetText {
+    position: absolute;
+    transform: translate(20px, 35px);
+    font-size: 10px;
+    font-family: "Playwrite MX";
+}
+
+#gameArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7px;
+    font-size: 100px;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+
+}
+
+.cardSurface {
+    position: relative;
+    border-radius: 15%;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardFront,
+.cardBack {
+    position: absolute;
+    border-radius: 15%;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    text-align: center;
+
+}
+
+.cardFront {
+    background-image: url('https://t3.ftcdn.net/jpg/01/41/89/66/240_F_141896604_7nN1H8kn1aGM9irBQGHNhqNbfjuIQArN.jpg');
+}
+
+.cardBack {
+    background-color: black;
+    transform: rotateY(180deg);
+}
+
+.cardSurface.spin {
+    transform: rotateX(360deg);
+}
+
+.cardSurface.flipped {
+    transform: rotateY(180deg);
+}
+
+#moveCounter{
+    position: relative;
+    background-color: blue;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+}
+
+.counterText {
+    position: absolute;
+    color: aliceblue;
+    font-size: 25px;
+    transform: translate(35px);
+}
+
+.count {
+    position: absolute;
+    font-size: 70px;
+    color: aliceblue;
+    transform: translate(80px)
+    
+}

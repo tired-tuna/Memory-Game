@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <script src="https://kit.fontawesome.com/b2741b833e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX" rel="stylesheet">
+</head>
+
+<body>
+    <div id="title">
+        <div>
+            <button id="startButton" class="btn"><i class="fa-solid fa-play"></i>
+                <p class="startText">Start</p>
+            </button>
+        </div>
+        <h1>Memory Game</h1>
+        <div>
+            <button id="restartButton" class="btn">
+                <a href="index.html" class="reset"><i class="fa-solid fa-rotate-right"></i></a>
+                <p class="resetText">RESET</p>
+            </button>
+        </div>
+
+    </div>
+    <div id="gameArea">
+        <div class="cardColumn">
+            <div class="cardContainer">
+                <div id="card1" class="cardSurface">
+                    <div class="cardFront">
+                        <div>🪴</div>
+                    </div>
+                    <div class="cardBack">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardContainer">
+                <div id="card2" class="cardSurface">
+                    <div class="cardFront">
+                        <div>🪴</div>
+                    </div>
+                    <div class="cardBack">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardContainer">
+                <div id="card3" class="cardSurface">
+                    <div class="cardFront">
+                        <div class="frontImg">🪴</div>
+                    </div>
+                    <div class="cardBack">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardContainer">
+                <div id="card4" class="cardSurface">
+                    <div class="cardFront">
+                        <div>🪴</div>
+                    </div>
+                    <div class="cardBack">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cardColumn">
+            <div class="cardContainer">
+                <div id="card1" class="cardSurface">
+                    <div class="cardFront">
+                        <div>🪴</div>
+                    </div>
+                    <div class="cardBack">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardContainer">
+                <div id="card2" class="cardSurface">
+                    <div class="cardFront">
+                        <div>🪴</div>
+                    </div>
+                    <div class="cardBack">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardContainer">
+                <div id="card3" class="cardSurface">
+                    <div class="cardFront">
+                        <div class="frontImg">🪴</div>
+                    </div>
+                    <div class="cardBack">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardContainer">
+                <div id="card4" class="cardSurface">
+                    <div class="cardFront">
+                        <div>🪴</div>
+                    </div>
+                    <div class="cardBack">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cardColumn">
+            <div class="cardContainer">
+                <div id="card1" class="cardSurface">
+                    <div class="cardFront">
+                        <div>🪴</div>
+                    </div>
+                    <div class="cardBack">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardContainer">
+                <div id="card2" class="cardSurface">
+                    <div class="cardFront">
+                        <div>🪴</div>
+                    </div>
+                    <div class="cardBack">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardContainer">
+                <div id="card3" class="cardSurface">
+                    <div class="cardFront">
+                        <div class="frontImg">🪴</div>
+                    </div>
+                    <div class="cardBack">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardContainer">
+                <div id="card4" class="cardSurface">
+                    <div class="cardFront">
+                        <div>🪴</div>
+                    </div>
+                    <div class="cardBack">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cardColumn">
+            <div class="cardContainer">
+                <div id="card1" class="cardSurface">
+                    <div class="cardFront">
+                        <div>🪴</div>
+                    </div>
+                    <div class="cardBack">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardContainer">
+                <div id="card2" class="cardSurface">
+                    <div class="cardFront">
+                        <div>🪴</div>
+                    </div>
+                    <div class="cardBack">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardContainer">
+                <div id="card3" class="cardSurface">
+                    <div class="cardFront">
+                        <div class="frontImg">🪴</div>
+                    </div>
+                    <div class="cardBack">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cardContainer">
+                <div id="card4" class="cardSurface">
+                    <div class="cardFront">
+                        <div>🪴</div>
+                    </div>
+                    <div class="cardBack">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="moveCounter">
+            <p class="counterText">Total Moves: </p>
+            <p class="count">0</p>
+        </div>
+    </div>
+    <div class="gameEnd">
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
